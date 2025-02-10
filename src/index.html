@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+
+    <script>
+        let pid, psst, peng, ptotal, pavg, pmath, pname;
+
+        
+        pid = prompt("Enter the ID");
+        pname = prompt("Enter the name");
+        pmath = prompt("Enter Maths marks");
+        peng = prompt("Enter English Marks");
+        psst = prompt("Enter social Science Marks");
+        ptotal = parseInt(pmath) + parseInt(peng) + parseInt(psst);
+        pavg = ptotal/3;
+
+        
+
+
+
+        document.write(`<div class="container">
+        <table border="1" width="100%">
+            <thead>
+                    <tr>
+                        <th>sID</th>
+                        <th>sName</th>
+                        <th>Maths</th>
+                        <th>English</th>
+                        <th>Social sc.</th>
+                        <th>Total</th>
+                        <th>Average</th
+                    </tr>
+                </thead> 
+            <tr>
+                <td> ${pid} </td>
+                <td> ${pname} </td>
+                <td> ${pmath} </td>
+                <td> ${peng} </td>
+                <td> ${psst} </td>
+                <td> ${ptotal} </td>
+                <td> ${pavg} </td>
+            </tr>
+            
+        </table>
+    </div>`)
+        
+    </script>
+</body>
+</html>
+
